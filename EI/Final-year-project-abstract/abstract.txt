@@ -1,0 +1,13 @@
+Challenge: Generating paired synthetic medical images and segmentation masks is laborious and subjective, particularly with conditional generative models that rely on large labeled datasets.
+
+Limitations: Existing segmentation mask-conditioned generative models face issues with limited constraints on anatomical structures, leading to unrealistic features and reduced variability in synthetic lesions.
+
+Proposed Solution: The study introduces Unsupervised Mask (UM)-guided synthesis to generate synthetic images and segmentations using limited manual segmentation labels.
+
+Method: A superpixel-based algorithm is developed to provide unsupervised structural guidance, and a conditional generative model is used to synthesize images and annotations in a semi-supervised multi-task setting.
+
+Evaluation: New metrics, multi-scale multi-task Fréchet Inception Distance (MM-FID) and multi-scale multi-task standard deviation (MM-STD), are proposed for assessing both fidelity and variety of synthetic CT images.
+
+Results: UM-guided synthesis yields higher quality synthetic images with significantly better fidelity, variety, and utility compared to segmentation mask-guided methods (p < 0.05).
+
+Impact: The approach offers a more efficient and effective way to generate synthetic medical images and segmentations with improved performance metrics.
